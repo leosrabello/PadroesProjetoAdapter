@@ -1,19 +1,4 @@
-# 🧩 Projeto Adapter — Mídias Sociais
+O projeto usa o padrão **Adapter** para padronizar o acesso a diferentes APIs de redes sociais.  
+Cada API tem seu próprio jeito de funcionar, então foram criados adaptadores (por exemplo, `TwitterAdapter` e `InstagramAdapter`) que “traduzem” essas diferenças para uma interface única chamada `Plataforma`.  
+Assim, o sistema consegue publicar, agendar e buscar estatísticas sem precisar conhecer os detalhes de cada API.
 
-Este projeto mostra como integrar diferentes APIs de redes sociais através do **padrão Adapter**, fornecendo uma interface unificada.
-
-## 🚀 Como executar
-
-```bash
-javac -d out *.java
-java -cp out Main
-```
-
-## 📂 Arquivos principais
-- `Plataforma.java` — interface unificada.
-- `TwitterAdapter.java` / `InstagramAdapter.java` — adaptadores para APIs simuladas.
-- `GerenciadorMidiaSocial.java` — gerencia publicação, agendamento e estatísticas.
-- `Conteudo.java` / `Publicacao.java` / `Estatisticas.java` — modelos de dados.
-- `Main.java` — demonstração do uso.
-
-✅ Simples, sem pacotes, ideal para exercícios.
